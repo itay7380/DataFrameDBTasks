@@ -16,12 +16,12 @@ def Main():
     Industrial.PopulateGroups()
 
     # Task 3
-    # I deployed the MongoDB Compas Win server app
+    # MongoDB Compas Win server app deployed and used
     print("Task 3:")
     MongoDb = CMongoDb(_s_INDUSTRIAL_FILE_PATH)
     MongoDb.InsertDocuments()
     MongoDb.FindDocuments()
-    MongoDb.DropCollectionAndCloseConnection(False)
+    MongoDb.DropCollectionAndCloseConnection()
     print()
 
     # Task 4 + 5
